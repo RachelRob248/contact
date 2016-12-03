@@ -1,0 +1,165 @@
+/*CSS Reset*/
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*Body*/
+body {
+  font-family: 'Indie Flower', cursive;
+  background-color: #EEF0F2;
+  background-image: url(../images/gradient.gif);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 100%;
+}
+
+/*Header*/
+header {
+  background-color: #C6C7C4;
+  border-bottom: 1px solid #708D81;
+  font-family: 'Eczar', serif;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #708D81;
+  text-shadow: 1px 1px 1px #4B5842;
+  margin-left: 20px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 450;
+  color: #708D81;
+  text-shadow: 1px 1px 1px #4B5842;
+  margin-left: 5px;
+  margin-top: -15px;
+}
+
+/*Content*/
+#content {
+  color: #1D263B;
+  padding: 2em 3% 1em 3%;
+}
+#content h2 {
+  font-size: 2em;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px groove #708D81;
+  text-shadow: 1px 1px 1px #C6C7C4;
+}
+#content p {
+  line-height: 125%;
+  padding-bottom: 5px;
+}
+
+/*images*/
+figure.me {
+  float: right;
+  width: 40%;
+  height: auto;
+}
+figure.me img {
+  width: 100%;
+}
+
+/*Other*/
+div.clear {
+  clear: both;
+}
+
+@keyframes facebook {
+  0% {color: #3b5998;}
+  50% {color: #EEF0F2;}
+  100% {color: #3b5998;}
+}
+
+/*Container*/
+div#container {
+  max-width: 1000px;
+  min-width: 350px;
+  margin: 0 auto;
+  background-color: #C6C7C4;
+  box-shadow: 2px 2px 5px #C6C7C4;
+}
+footer {
+  text-align: center;
+  clear: both;
+  background-color: #708D81;
+}
+footer a {
+  text-decoration: none;
+  color: #3b5998;
+  font-weight: bold;
+  animation-name: facebook;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+/*Nav for desktop and tablet*/
+@media only screen and (min-width: 601px){
+  nav {
+    background-color: #708D81;
+  }
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.menu a {
+    float: right;
+    color: #1D263B;
+    padding: .2em 2em;
+    text-decoration: none;
+    border-right: 1px solid #A2999E;
+    border-bottom: 1px solid #A2999E;
+  }
+  ul.menu a:hover {
+    color: #EEF0F2;
+  }
+  ul.menu li.active a {
+    color: #A2999E;
+    background-color: #EEF0F2;
+  }
+  footer.footer{
+    margin-top: 330px;
+  }
+  footer.footer2{
+    margin-top: 400px;
+  }
+}
+
+/*Navigation for phone*/
+@media only screen and (max-width: 600px){
+  nav {
+    background-color: #708D81;
+  }
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.menu a {
+    display: block;
+    text-align: center;
+    color: #1D263B;
+    padding: .2em 3.853em;
+    text-decoration: none;
+    border: 1px solid #A2999E;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  ul.menu li.active a {
+    color: #A2999E;
+    background-color: #EEF0F2;
+  }
+  header{
+    border-bottom: none;
+  }
+}
+
+.error {
+  color: #C4172E;
+}
